@@ -14,7 +14,8 @@ module.exports = async (client, message) => {
     if (message.content.match(mention)) {
       const embed = new MessageEmbed()
         .setColor(client.embedColor)
-        .setDescription(`**› My prefix in this server is \`${prefix}\`**\n**› You can see my all commands type \`${prefix}\`help**`);
+        .setAuthor('| Marley Music', client.user.displayAvatarURL())
+        .setDescription(`** My prefix in this server is \`${prefix}\`**\n** You can see my all commands type \`${prefix}\`help**`);
       message.channel.send({embeds: [embed]})
     };
    const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");

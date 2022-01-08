@@ -17,7 +17,7 @@ module.exports = {
 
         if (!player.queue.current) {
             let thing = new MessageEmbed()
-                .setColor("RED")
+                .setColor("AC0404")
                 .setDescription("There is no music playing.");
             return message.reply({embeds: [thing]});
         }
@@ -26,7 +26,7 @@ module.exports = {
        if (position > player.queue.size) {
         const number = (position + 1);
          let thing = new MessageEmbed()
-            .setColor("RED")
+            .setColor("AC0404")
             .setDescription(`No songs at number ${number}.\nTotal Songs: ${player.queue.size}`);
             return message.reply({embeds: [thing]});
         }

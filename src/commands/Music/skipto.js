@@ -18,7 +18,7 @@ module.exports = {
 
         if (!player.queue.current) {
             let thing = new MessageEmbed()
-                .setColor("RED")
+                .setColor("AC0404")
                 .setDescription("There is no music playing.");
             return message.reply({embeds: [thing]});
         }
@@ -27,7 +27,7 @@ module.exports = {
 		
 		if (!position || position < 0 || position > player.queue.size) { 
 			let thing = new MessageEmbed()
-                .setColor("RED")
+                .setColor("AC0404")
 				.setDescription(`Usage: ${message.client.prefix}skipto <Number of song in queue>`)
             return message.reply({embeds: [thing]});
 		}

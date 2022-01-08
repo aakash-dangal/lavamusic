@@ -18,7 +18,7 @@ module.exports = {
 
         if (!player.queue.current) {
             let thing = new MessageEmbed()
-                .setColor("RED")
+                .setColor("AC0404")
                 .setDescription("There is no music playing.");
             return message.reply({embeds: [thing]});
         }

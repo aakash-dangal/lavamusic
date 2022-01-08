@@ -1,13 +1,13 @@
 {
-  "name": "lavamusic",
-  "description": "Lavamusic a powerful music Discord bot that need in your server",
+  "name": "Rebuttal Music",
+  "description": " Music is a powerful music Discord bot that need in your server",
   "repository": "https://github.com/brblacky/lavamusic",
   "logo": "https://media.discordapp.net/attachments/876035356460462090/888434725235097610/20210820_124325.png",
   "keywords": ["discord", "discordjs", "music"],
   "env": {
     "MONGO_URI": {
     "description": "Your Mongo url",
-    "value": "",
+    "value": "https://media.discordapp.net/attachments/919185875529789533/920223926284603392/ESPORTS_ZONE.png",
     "required": true
     },
     "PREFIX":{
@@ -16,11 +16,11 @@
     "required": true
      },
     "SPOTIFYID":{
-    "description": "Spotify client id",
+    "description": "3fabee4f5cad4b5cbac4a0e5c2ef7cf4",
     "required": true
      },
      "SPOTIFYSECRET":{
-     "description": "Spotify client secret",
+     "description": "b657301aa2124d3395762cd530d00859",
      "required": true
      },
      "COlOR":{
@@ -29,15 +29,15 @@
      "required": false
      },
      "LOGS":{
-     "description": "Channel I'd",
+     "description": "920704024565665862",
      "required": true
      },
      "OWNERID":{
-     "description": "your discord id",
+     "description": "896268797906911273",
      "required": false
      },
      "TOKEN": {
-     "description": "Your bot's bot token.",
+     "description": "OTE5MTc5OTIyMzY5NTYwNjU2.YbSDAw.OAetijRFD9qyac-IQxggsYSYJUM",
      "required": true
     }
   }

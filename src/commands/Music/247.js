@@ -1,6 +1,6 @@
 const { MessageEmbed } = require("discord.js");
 module.exports = {
-  name: "247",
+  name: "24/7",
   aliases: ["24h", "24/7", "24*7"],
   category: "Music",
   description: "24/7 in voice channel",

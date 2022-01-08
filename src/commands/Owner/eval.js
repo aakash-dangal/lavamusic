@@ -46,7 +46,7 @@ module.exports = {
                 const { body } = await post("https://hastebin.com/documents").send(err);
                 embed.addField("Output", `https://hastebin.com/${body.key}.js`).setColor("RED");
             } else {
-                embed.addField("Output", "```js\n" + err + "```").setColor("RED");
+                embed.addField("Output", "```js\n" + err + "```").setColor(client.embedColor);
             }
 
             message.channel.send({embeds: [embed]});

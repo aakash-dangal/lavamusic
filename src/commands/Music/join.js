@@ -42,7 +42,7 @@ module.exports = {
     } else if (message.guild.me.voice.channel !== channel) {
 
       let thing = new MessageEmbed()
-        .setColor("RED")
+        .setColor(client.embedColor)
         .setDescription(`You must be in the same channel as ${message.client.user}`);
       return message.reply({ embeds: [thing] });
     }

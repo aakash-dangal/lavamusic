@@ -4,7 +4,7 @@ module.exports = {
     name: "invite",
     category: "Information",
     aliases: [ "addme" ],
-    description: "invite LavaMusic",
+    description: "invite Marley",
     args: false,
     usage: "",
     permission: [],
@@ -15,24 +15,34 @@ module.exports = {
     const row = new MessageActionRow()
 			.addComponents(
         new MessageButton()
+    .setLabel("Invite(Admin)")
+    .setStyle("LINK")
+    .setURL(`https://discord.com/api/oauth2/authorize?client_id=924635835704414218&permissions=8&scope=bot`),
+			new MessageButton()
     .setLabel("Invite")
     .setStyle("LINK")
-    .setURL(`https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=36768832&scope=applications.commands%20bot`),
-			new MessageButton()
-    .setLabel("GitHub")
-    .setStyle("LINK")
-    .setURL("https://github.com/brblacky/lavamusic"),
+    .setURL("https://discord.com/api/oauth2/authorize?client_id=924635835704414218&permissions=139652885312&scope=bot"),
     new MessageButton()
     .setLabel("Support")
     .setStyle("LINK")
-    .setURL("https://discord.gg/gfcv94hDhv")
+    .setURL("https://discord.gg/cBptPUN6S5")
 			);
 
           const mainPage = new MessageEmbed()
-            .setAuthor('LavaMusic', 'https://media.discordapp.net/attachments/845318824323448882/876690332333514752/1629089649835.png')
-            .setThumbnail('https://media.discordapp.net/attachments/845318824323448882/876690332333514752/1629089649835.png')
-             .setColor('#303236')
-            .addField('invite lavamusic', `[Here](https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=36768832&scope=applications.commands%20bot)`, true)
+            .setAuthor('| Invite Marley', client.user.displayAvatarURL())
+            .setThumbnail(client.user.displayAvatarURL())
+             .setColor('#AC0404')
+             .setFooter(``)
+            .setDescription(`
+**Invite Without Admin**
+[Get Marley](https://discord.com/api/oauth2/authorize?client_id=924635835704414218&permissions=139652885312&scope=bot)
+
+**Invite With Admin**
+[Get Marley](https://discord.com/api/oauth2/authorize?client_id=924635835704414218&permissions=8&scope=bot)
+
+**Need Help**
+[Support Server](https://discord.gg/cBptPUN6S5)`)
+     
            message.reply({embeds: [mainPage], components: [row]})
     }
 				}

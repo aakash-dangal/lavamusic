@@ -16,26 +16,26 @@ module.exports = {
         new MessageButton()
     .setLabel("Invite")
     .setStyle("LINK")
-    .setURL(`https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=36768832&scope=applications.commands%20bot`),
-			new MessageButton()
-    .setLabel("GitHub")
-    .setStyle("LINK")
-    .setURL("https://github.com/brblacky/lavamusic"),
+    .setURL(`https://discord.com/api/oauth2/authorize?client_id=924635835704414218&permissions=139652885312&scope=bot`),
     new MessageButton()
-    .setLabel("Support")
+    .setLabel("Support Server")
     .setStyle("LINK")
-    .setURL("https://discord.gg/gfcv94hDhv")
+    .setURL("https://discord.gg/cBptPUN6S5"),
+        new MessageButton()
+        .setLabel("Vote")
+        .setStyle("LINK")
+        .setURL("https://discordbotlist.com/bots/marley-5858/upvote")
 			);
 
       const mainPage = new MessageEmbed()
-            .setAuthor('LavaMusic', 'https://media.discordapp.net/attachments/876035356460462090/888434725235097610/20210820_124325.png')
-            .setThumbnail('https://media.discordapp.net/attachments/876035356460462090/888434725235097610/20210820_124325.png')
-            .setColor('#303236')
-            .addField('Creator', '[Blacky#6618](https://github.com/brblacky) And [Venom#9718](https://github.com/Venom9718/)', true)
-            .addField('Organization', '[Blacky](https://github.com/brblacky)', true)
-            .addField('Repository', '[Here](https://github.com/brblacky/lavamusic)', true)
+            .setAuthor('| About Marley', 'https://media.discordapp.net/attachments/928860250579296296/929035389136691290/20220107_211524.jpg')
+            .setThumbnail('https://media.discordapp.net/attachments/928860250579296296/929035389136691290/20220107_211524.jpg')
+            .setColor('#AC0404')
+            .setFooter('Made with 💖 By Deadsoul#799', 'https://media.discordapp.net/attachments/928860250579296296/929049779240075305/vendron-1.gif')
+            .addField('Creator', '[Deadsoul#7999](https://discord.com/users/913643193629827082) And [Sarkar#9307](https://discord.com/users/842768350375313438)', true)
+            .addField('Organization', '[Marley Music](https://discord.gg/cBptPUN6S5)', true)
             .addField('\u200b',
-                `[LavaMusic](https://github.com/brblacky/lavamusic/) is [Blacky](https://github.com/brblacky) and [Venom](https://github.com/Venom9718)'s Was created by blacky and Venom. He really wants to make his first open source project ever. Because he wants more for coding experience. In this project, he was challenged to make project with less bugs. Hope you enjoy using LavaMusic!`
+                `[Marley Music](https://discord.com/users/924635835704414218) is created by Deadsoul and Sarkar. They really wants to make his first Over Powered Music Bot. Because They wants more for coding experience. In this project, They were challenged to make project with less bugs. Hope you enjoy using Marley music!`
             )
         return message.reply({embeds: [mainPage], components: [row]});
     }
